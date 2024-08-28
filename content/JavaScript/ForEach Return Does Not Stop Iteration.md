@@ -1,0 +1,1 @@
+`return false` inside a `forEach` loop doesn't stop the iteration. Instead, you should use a `for` loop or a `some` or `every` array method to achieve early termination of the loop when a validation fails.
