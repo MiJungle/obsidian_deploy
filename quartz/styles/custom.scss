@@ -1,3 +1,14 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+.container {
+  background-color: "F2F9FF";
+  display: flex;
+  flex-direction: column;
+}
+
+.app-img {
+  display: flex;
+  flex-direction: row;
+}
