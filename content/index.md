@@ -1,9 +1,9 @@
   <div class="profile-container">
 
   
-  <img src="/images/my-image.jpg" alt="프로파일 이미지" class="profile-img">
+  <img src="/images/my-image.jpg" alt="프로파일 이미지" class="profile">
   <div class="profile-text">
-# Mi Jung Lee
+<h1> Mi Jung Lee</h1>
 
 ## Frontend Engineer
 
@@ -18,11 +18,11 @@ Frontend Engineer specializing in developing responsive, interactive web interfa
 # Projects
 
 <div class="container">
-<div class="app-img">
-  <img src="/images/logo-secondDoctor.png" alt="세컨드닥터 로고" class="img-logo">
+<div class="app-img-wrap">
+  <img src="/images/logo-secondDoctor.png" alt="세컨드닥터 로고" class="logo">
   <img src="/images/seconddoctor.png" alt="세컨드닥터 이미지">
 </div>
-<div class="app-text">
+<div class="app-text-wrap">
   <h2> Second Doctor and Second Wind </h2>
   <div>Cancer Recovery Health Management Solution</div>
   <p>

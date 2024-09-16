@@ -5,6 +5,7 @@
 .profile-container {
     display: flex;
     flex-direction: row;
+    gap: 60px;
 }
 
 .container {
@@ -17,21 +18,24 @@
   border-radius: 30px;
 }
 
-.img-profile {
-    border-radius: 50px;
+img.profile {
+    border-radius: 50%;
+    width: 200px;
+    height: 150px;
+    border: 5px solid #317CC0;
 }
 
-.img-app {
+.app-img-wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 70%;
 }
 
-.app-text {
+.app-text-wrap {
     width: 100%;
 }
 
-.img-logo {
+img.logo {
   max-width: 180px;
 }
