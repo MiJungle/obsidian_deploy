@@ -5,10 +5,10 @@
 .container {
   background-color: "F2F9FF";
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .app-img {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
