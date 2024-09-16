@@ -1,5 +1,8 @@
-![[my-image.jpg]]
+  <div class="profile-container">
 
+  
+  <img src="/images/my-image.jpg" alt="프로파일 이미지" class="profile-img">
+  <div class="profile-text">
 # Mi Jung Lee
 
 ## Frontend Engineer
@@ -7,30 +10,27 @@
 JavaScript | jQuery | React.js | Next.js | Vue.js
 
 Frontend Engineer specializing in developing responsive, interactive web interfaces optimized for hybrid applications.
+</div>
 
+</div>
 ---
 
 # Projects
 
 <div class="container">
 <div class="app-img">
+  <img src="/images/logo-secondDoctor.png" alt="세컨드닥터 로고" class="img-logo">
   <img src="/images/seconddoctor.png" alt="세컨드닥터 이미지">
-  <img src="/images/logo-secondDoctor.png" alt="세컨드닥터 로고">
 </div>
 <div class="app-text">
-
-## Second Doctor and Second Wind
-
-Cancer Recovery Health Management Solution
-
+  <h2> Second Doctor and Second Wind </h2>
+  <div>Cancer Recovery Health Management Solution</div>
   <p>
     This is a personalized health management application designed to aid individuals recovering from
     cancer surgery. The app focuses on enhancing recovery and quality of life by offering features
     such as health consultations, exercise tracking, meal planning, and blood pressure monitoring.
   </p>
-
   <h3>My Contributions</h3>
-
   <ul>
     <li>
       <strong>Lymphedema Monitoring:</strong> Built functionality to track lymphedema-affected areas,
@@ -45,9 +45,7 @@ Cancer Recovery Health Management Solution
       regularly report symptoms, providing valuable insights for ongoing health management.
     </li>
   </ul>
-
   <h3>Technologies Used</h3>
-
   <ul>
     <li>JavaScript, jQuery</li>
     <li>Data Visualization with Canvas and SVG</li>

@@ -2,13 +2,36 @@
 
 // put your custom CSS here!
 
-.container {
-  background-color: "F2F9FF";
-  display: flex;
-  flex-direction: row;
+.profile-container {
+    display: flex;
+    flex-direction: row;
 }
 
-.app-img {
+.container {
+  background-color: "#F2F9FF";
+  display: flex;
+  flex-direction: row;
+  line-height: 1rem;
+  gap: 40px;
+  font-size: small;
+  border-radius: 30px;
+}
+
+.img-profile {
+    border-radius: 50px;
+}
+
+.img-app {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 70%;
+}
+
+.app-text {
+    width: 100%;
+}
+
+.img-logo {
+  max-width: 180px;
 }
