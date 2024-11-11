@@ -46,7 +46,6 @@ Copy
 - `random` is `null` or is pointing to some node in the linked list.
 
 
-### Solution
 ### Solution: Copy Linked List with Random Pointer
 
 **1. Brute Force Solution: Using a Hash Map**  

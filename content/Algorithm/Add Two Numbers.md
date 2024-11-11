@@ -38,7 +38,6 @@ Copy
 
 
 ### Solution
-### Solution: Add Two Numbers
 
 **1. Brute Force Solution: Using a Stack**  
 **Explanation:**  
