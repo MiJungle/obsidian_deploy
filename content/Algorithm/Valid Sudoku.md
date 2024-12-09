@@ -95,6 +95,68 @@ function isValidSudoku(board) {
 }
 ```
 
+
+```js
+const isValidSudokuBruteForce = (board) => {
+  // Helper function to check if a set of numbers is valid
+  const isValidGroup = (group) => {
+    const seen = new Set();
+    for (const value of group) {
+      if (value === ".") continue;
+      if (seen.has(value)) return false;
+      seen.add(value);
+    }
+    return true;
+  };
+
+  // Check all rows
+  for (let row = 0; row < 9; row++) {
+    const rowValues = board[row];
+    if (!isValidGroup(rowValues)) return false;
+  }
+
+  // Check all columns
+  for (let col = 0; col < 9; col++) {
+    const colValues = [];
+    for (let row = 0; row < 9; row++) {
+      colValues.push(board[row][col]);
+    }
+    if (!isValidGroup(colValues)) return false;
+  }
+
+  // Check all 3x3 sub-boxes
+  for (let boxRow = 0; boxRow < 3; boxRow++) {
+    for (let boxCol = 0; boxCol < 3; boxCol++) {
+      const boxValues = [];
+      for (let row = 0; row < 3; row++) {
+        for (let col = 0; col < 3; col++) {
+          boxValues.push(board[boxRow * 3 + row][boxCol * 3 + col]);
+        }
+      }
+      if (!isValidGroup(boxValues)) return false;
+    }
+  }
+
+  return true;
+};
+
+// Example usage
+const board = [
+  ["5", "3", ".", ".", "7", ".", ".", ".", "."],
+  ["6", ".", ".", "1", "9", "5", ".", ".", "."],
+  [".", "9", "8", ".", ".", ".", ".", "6", "."],
+  ["8", ".", ".", ".", "6", ".", ".", ".", "3"],
+  ["4", ".", ".", "8", ".", "3", ".", ".", "1"],
+  ["7", ".", ".", ".", "2", ".", ".", ".", "6"],
+  [".", "6", ".", ".", ".", ".", "2", "8", "."],
+  [".", ".", ".", "4", "1", "9", ".", ".", "5"],
+  [".", ".", ".", ".", "8", ".", ".", "7", "9"],
+];
+
+console.log(isValidSudokuBruteForce(board)); // Output: true
+
+```
+
 **Time Complexity**:  
 - `O(9^2)`: Checking each row, column, and grid once.
 
